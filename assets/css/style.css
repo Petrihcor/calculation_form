@@ -26,6 +26,9 @@ h1{
                 font-size: 26px;
                 font-weight: 900;
             }
+            .col-3.no-color {
+                background-color: none;
+            }
             label:not([class="form-check-label"]) {
                 font-size: 16px;
                 font-weight: 600;
