@@ -1,0 +1,182 @@
+body {
+	font-family: Arial;
+}
+p {
+	font-size: 14px;
+	line-height: 24px;
+}
+.card {
+	-webkit-box-shadow: 0px 0px 13px 0px rgba(69, 85, 185, 0.2);
+	-moz-box-shadow: 0px 0px 13px 0px rgba(69, 85, 185, 0.2);
+	box-shadow: 0px 0px 13px 0px rgba(69, 85, 185, 0.2);
+	max-width: 338px;
+	padding: 40px;
+	border: none;
+}
+.card:hover {
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(69, 85, 185, 0.4);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(69, 85, 185, 0.4);
+	box-shadow: 0px 0px 20px 0px rgba(69, 85, 185, 0.4);
+}
+.card * {
+	margin-top: 6px;
+}
+.card h3 {
+	font-family: Helvetica;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+	letter-spacing: 0em;
+	text-align: left;
+	text-transform: uppercase;
+	color: #272C4C;
+}
+.card a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #273170;
+	background: #FFBA00;
+	padding: 15px;
+	border-radius: 5px;
+}
+.card a:hover {
+	background: #273170;
+	color: #FFBA00;
+}
+.products li {
+ 	margin-top: 40px;
+}
+#pagination a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #FFBA00;
+	text-decoration: none;
+	color:#3E3C3C;
+	margin-left: 5px;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 40px;
+}
+#pagination div {
+	width: 40px;
+	height: 40px;
+	margin-left: 5px;
+	text-align: center;
+	line-height: 40px;
+}
+#pagination a:first-child {
+	margin: 0;
+	background: #FFBA00;
+	color: #fff;
+}
+#pagination a:last-child {
+	display: flex;
+	line-height: normal;
+}
+#pagination a:last-child img{
+	margin: auto;
+}
+
+#pagination a:hover {
+	background: #FFBA00;
+	color: #fff;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.filter-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 40px;
+}
+.filter-checkbox:first-child+label {
+	margin: 0;
+}
+.filter-checkbox+label::before {
+  content: '';
+  background: #CBD4EC;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 2px;
+  margin-right: 9px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.filter-checkbox:checked+label::before {
+  background-image: url("/img/check.png");
+}
+
+/* стили при наведении курсора на checkbox */
+.filter-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.filter-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе */
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.filter-checkbox:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.filter-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
+@media(max-width: 767px) {
+	.filter-checkbox+label {
+		margin: 0;
+	}
+}
+@media(max-width: 575px) {
+	.card {
+		margin: auto;
+	}
+}
+
+.container{
+                margin-top: 50px;
+                border-radius: 15px;
+                border: 3px solid #333;
+            }
+            .col-3{
+                background-color: #FF9A00;
+                border-radius: 0;
+                border-top-left-radius: 13px;
+                border-bottom-left-radius: 13px;
+                display: flex;
+                align-items: center;
+                flex-flow: column;
+                justify-content: center;
+                font-size: 26px;
+                font-weight: 900;
+            }
+            label:not([class="form-check-label"]) {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .form-check-input:checked{
+                background-color: #FF9A00;
+                border-color: #FF9A00;
+            }
+            .col-9{
+                padding: 25px;
+            }
+            .btn-primary {
+                color: #fff;
+                background-color: #FF9A00;
+                border-color: #FF9A00;
+            }
