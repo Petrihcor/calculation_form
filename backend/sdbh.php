@@ -236,7 +236,7 @@ class sdbh {
 	 * @return query result as array of rows, each an associative array
 	 */
 
-	public function denis(
+	public function select_property(
 		$tbl_name,
 		$property,
 		$order = Null,
